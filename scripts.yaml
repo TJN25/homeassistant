@@ -115,6 +115,5 @@ good_night_lights_off:
           brightness: 10            
       - delay: 5
       - service: light.turn_off
-        data:
-          entity_id: light.all_lights
+        entity_id: light.all_lights
 
