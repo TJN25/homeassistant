@@ -9,3 +9,20 @@ warm_eveing_lights:
        data:
          entity_id: light.main_lights
          rgb_color: [255, 130, 0]
+
+
+good_night_lights_off:
+    alias: Good Night!
+    sequence:
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 100
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 50
+      - delay: 5
+      - service: light.turn_off
+        entity_id: light.all_lights
