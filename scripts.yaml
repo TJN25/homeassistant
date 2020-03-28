@@ -17,12 +17,102 @@ good_night_lights_off:
       - service: light.turn_on
         data:
           entity_id: light.all_lights
+          brightness: 200
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 190
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 180
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 170
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 160
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 150
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 140
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 130
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 120
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 110
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
           brightness: 100
       - delay: 5
       - service: light.turn_on
         data:
           entity_id: light.all_lights
+          brightness: 90
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 80
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 70
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 60
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
           brightness: 50
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 40  
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 30  
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 20  
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 10            
       - delay: 5
       - service: light.turn_off
         data:
