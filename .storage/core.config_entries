@@ -1,0 +1,31 @@
+{
+    "data": {
+        "entries": [
+            {
+                "connection_class": "local_push",
+                "data": {},
+                "domain": "cast",
+                "entry_id": "d8613258a67646cb8936ca0830f1c201",
+                "options": {},
+                "source": "discovery",
+                "title": "Google Cast",
+                "version": 1
+            },
+            {
+                "connection_class": "unknown",
+                "data": {
+                    "secret": "f60360233c6692686d096b8b115b9e74",
+                    "webhook_id": "6f56b6dccb6c37ed66e64e7399c8284d8753fcab24b1f054a6b73b7d65a37aa1"
+                },
+                "domain": "owntracks",
+                "entry_id": "563e785c96d64fc6abb5461304bc80ef",
+                "options": {},
+                "source": "user",
+                "title": "OwnTracks",
+                "version": 1
+            }
+        ]
+    },
+    "key": "core.config_entries",
+    "version": 1
+}

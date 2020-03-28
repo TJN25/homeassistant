@@ -1,0 +1,90 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: -45.871439
+  longitude: 170.5000008
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 0
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Pacific/Auckland
+  # Customization file
+  customize: !include customize.yaml
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+# http:
+#   base_url: example.duckdns.org:8123
+
+# Discover some devices automatically
+discovery:
+
+# Sensors
+sensor:
+  # Weather prediction
+  - platform: yr
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+zone: !include zones.yaml
+
+light 7:
+  - platform: iglo
+    host: 192.168.178.75
+    name: Bedroom Lamp
+
+light 6:
+  - platform: iglo
+    host: 192.168.178.73
+    name: Turret Main
+
+light 5:
+  - platform: iglo
+    host: 192.168.178.74
+    name: Bedroom Main
+
+light 4:
+  - platform: iglo
+    host: 192.168.178.21
+    name: Turret Strip
+
+light 3:
+  - platform: group
+    name: Turret Lights
+    entities:
+      - light.turret_main
+      - light.turret_strip
+
+light 1:
+  - platform: group
+    name: All Lights
+    entities:
+      - light.turret_main
+      - light.turret_strip
+      - light.bedroom_main
+      - light.bedroom_lamp
+
+light 2:
+  - platform: group
+    name: Main Lights
+    entities:
+      - light.bedroom_main
+      - light.bedroom_lamp
+
+
+owntracks:
+  max_gps_accuracy: 100
+
+
+media_player:
+  - platform: gpmdp
+    host: 192.168.178.53

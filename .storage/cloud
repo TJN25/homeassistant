@@ -1,0 +1,19 @@
+{
+    "data": {
+        "alexa_enabled": true,
+        "cloud_user": "a22243f147c24562a3e0d6c7bfef2a1b",
+        "cloudhooks": {
+            "6f56b6dccb6c37ed66e64e7399c8284d8753fcab24b1f054a6b73b7d65a37aa1": {
+                "cloudhook_id": "be9061da8e004da99c1dd50cd75fbdb5",
+                "cloudhook_url": "https://hooks.nabu.casa/gAAAAABc7QPKfUX3C-fCpBsrisQskruLPpLwKatTNyGEoRQne60hr8wzzRahb-eziTVnSAgw-IZjh80u-wDKRRF1HQnrC9mD-DAIldiPGICE-KZpYTRBrsGqA49X5Cj7cKmmwo4Or6bl0OKzKfU1bw0EoAvzaRhgAHUOZQEqewK5TeRfuzVMnvs=",
+                "managed": false,
+                "webhook_id": "6f56b6dccb6c37ed66e64e7399c8284d8753fcab24b1f054a6b73b7d65a37aa1"
+            }
+        },
+        "google_enabled": true,
+        "google_secure_devices_pin": "0316",
+        "remote_enabled": false
+    },
+    "key": "cloud",
+    "version": 1
+}

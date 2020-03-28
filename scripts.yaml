@@ -1,0 +1,11 @@
+warm_eveing_lights:
+    alias: Warm Evening Lights
+    sequence:
+     - service: light.turn_on
+       data:
+         entity_id: light.turret_lights
+         rgb_color: [255, 0, 200]
+     - service: light.turn_on
+       data:
+         entity_id: light.main_lights
+         rgb_color: [255, 130, 0]

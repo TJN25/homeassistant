@@ -1,0 +1,14 @@
+{
+    "data": {
+        "persons": [
+            {
+                "device_trackers": [],
+                "id": "3f9fe897d7db4ebbbbbbe1b556b6a503",
+                "name": "Thomas Nicholson",
+                "user_id": "b915d4806e46497a94369f0cc6705d8e"
+            }
+        ]
+    },
+    "key": "person",
+    "version": 1
+}

@@ -1,0 +1,468 @@
+2020-02-27 22:08:59 ERROR (SyncWorker_0) [homeassistant.util.yaml] YAML file /Users/thomasnicholson25/.homeassistant/zones.yaml contains duplicate key "name". Check lines 0 and 7.
+2020-02-27 22:08:59 ERROR (SyncWorker_0) [homeassistant.util.yaml] YAML file /Users/thomasnicholson25/.homeassistant/zones.yaml contains duplicate key "latitude". Check lines 1 and 8.
+2020-02-27 22:08:59 ERROR (SyncWorker_0) [homeassistant.util.yaml] YAML file /Users/thomasnicholson25/.homeassistant/zones.yaml contains duplicate key "longitude". Check lines 2 and 9.
+2020-02-27 22:08:59 ERROR (SyncWorker_0) [homeassistant.util.yaml] YAML file /Users/thomasnicholson25/.homeassistant/zones.yaml contains duplicate key "radius". Check lines 3 and 10.
+2020-02-27 22:08:59 ERROR (SyncWorker_0) [homeassistant.util.yaml] YAML file /Users/thomasnicholson25/.homeassistant/zones.yaml contains duplicate key "icon". Check lines 4 and 11.
+2020-02-27 22:08:59 ERROR (Recorder) [homeassistant.components.recorder] Error during connection setup: (sqlite3.DatabaseError) database disk image is malformed
+(Background on this error at: http://sqlalche.me/e/4xp6) (retrying in 3 seconds)
+2020-02-27 22:09:02 ERROR (Recorder) [homeassistant.components.recorder] Error during connection setup: (sqlite3.DatabaseError) database disk image is malformed
+(Background on this error at: http://sqlalche.me/e/4xp6) (retrying in 3 seconds)
+2020-02-27 22:09:05 ERROR (Recorder) [homeassistant.components.recorder] Error during connection setup: (sqlite3.DatabaseError) database disk image is malformed
+(Background on this error at: http://sqlalche.me/e/4xp6) (retrying in 3 seconds)
+2020-02-27 22:09:08 ERROR (Recorder) [homeassistant.components.recorder] Error during connection setup: (sqlite3.DatabaseError) database disk image is malformed
+(Background on this error at: http://sqlalche.me/e/4xp6) (retrying in 3 seconds)
+2020-02-27 22:09:09 WARNING (MainThread) [homeassistant.setup] Setup of recorder is taking over 10 seconds.
+2020-02-27 22:09:12 ERROR (Recorder) [homeassistant.components.recorder] Error during connection setup: (sqlite3.DatabaseError) database disk image is malformed
+(Background on this error at: http://sqlalche.me/e/4xp6) (retrying in 3 seconds)
+2020-02-27 22:09:15 ERROR (Recorder) [homeassistant.components.recorder] Error during connection setup: (sqlite3.DatabaseError) database disk image is malformed
+(Background on this error at: http://sqlalche.me/e/4xp6) (retrying in 3 seconds)
+2020-02-27 22:09:18 ERROR (Recorder) [homeassistant.components.recorder] Error during connection setup: (sqlite3.DatabaseError) database disk image is malformed
+(Background on this error at: http://sqlalche.me/e/4xp6) (retrying in 3 seconds)
+2020-02-27 22:09:21 ERROR (Recorder) [homeassistant.components.recorder] Error during connection setup: (sqlite3.DatabaseError) database disk image is malformed
+(Background on this error at: http://sqlalche.me/e/4xp6) (retrying in 3 seconds)
+2020-02-27 22:09:24 ERROR (Recorder) [homeassistant.components.recorder] Error during connection setup: (sqlite3.DatabaseError) database disk image is malformed
+(Background on this error at: http://sqlalche.me/e/4xp6) (retrying in 3 seconds)
+2020-02-27 22:09:27 ERROR (Recorder) [homeassistant.components.recorder] Error during connection setup: (sqlite3.DatabaseError) database disk image is malformed
+(Background on this error at: http://sqlalche.me/e/4xp6) (retrying in 3 seconds)
+2020-02-27 22:09:27 ERROR (MainThread) [homeassistant.setup] Setup failed for recorder: Component failed to initialize.
+2020-02-27 22:09:27 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of history. Setup failed for dependencies: recorder
+2020-02-27 22:09:27 ERROR (MainThread) [homeassistant.setup] Setup failed for history: Could not set up all dependencies.
+2020-02-27 22:09:28 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of logbook. Setup failed for dependencies: recorder
+2020-02-27 22:09:28 ERROR (MainThread) [homeassistant.setup] Setup failed for logbook: Could not set up all dependencies.
+2020-02-27 22:09:29 ERROR (MainThread) [homeassistant.setup] Unable to set up dependencies of default_config. Setup failed for dependencies: history, logbook
+2020-02-27 22:09:29 ERROR (MainThread) [homeassistant.setup] Setup failed for default_config: Could not set up all dependencies.
+2020-02-27 22:09:29 ERROR (MainThread) [homeassistant.components.media_player] Error while setting up platform gpmdp
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/homeassistant/helpers/entity_platform.py", line 126, in _async_setup_platform
+    SLOW_SETUP_MAX_WAIT, loop=hass.loop)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/tasks.py", line 416, in wait_for
+    return fut.result()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/homeassistant/components/gpmdp/media_player.py", line 130, in setup_platform
+    setup_gpmdp(hass, config, code, add_entities)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/homeassistant/components/gpmdp/media_player.py", line 109, in setup_gpmdp
+    request_configuration(hass, config, url, add_entities)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/homeassistant/components/gpmdp/media_player.py", line 51, in request_configuration
+    websocket = create_connection((url), timeout=1)
+  File "/Users/thomasnicholson25/.homeassistant/deps/lib/python/site-packages/websocket/_core.py", line 511, in create_connection
+    websock.connect(url, **options)
+  File "/Users/thomasnicholson25/.homeassistant/deps/lib/python/site-packages/websocket/_core.py", line 220, in connect
+    options.pop('socket', None))
+  File "/Users/thomasnicholson25/.homeassistant/deps/lib/python/site-packages/websocket/_http.py", line 120, in connect
+    sock = _open_socket(addrinfo_list, options.sockopt, options.timeout)
+  File "/Users/thomasnicholson25/.homeassistant/deps/lib/python/site-packages/websocket/_http.py", line 186, in _open_socket
+    raise error
+  File "/Users/thomasnicholson25/.homeassistant/deps/lib/python/site-packages/websocket/_http.py", line 170, in _open_socket
+    sock.connect(address)
+socket.timeout: timed out
+2020-02-27 22:09:44 WARNING (SyncWorker_3) [plexapi] BadRequest (401) unauthorized http://192.168.178.26:32400/; <html><head><script>window.location = window.location.href.match(/(^.+\/)[^\/]*$/)[1] + 'web/index.html';</script><title>Unauthorized</title></head><body><h1>401 Unauthorized</h1></body></html>
+2020-02-28 00:21:44 ERROR (MainThread) [homeassistant.core] Error doing job: Fatal read error on socket transport
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 801, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+TimeoutError: [Errno 60] Operation timed out
+2020-02-28 02:17:22 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-02-28 02:35:47 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-02-28 02:35:47 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-02-28 02:36:18 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-02-28 02:36:36 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-02-28 02:36:36 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-02-28 02:36:36 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-02-28 04:58:55 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-02-29 02:01:13 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-02-29 02:40:37 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-02-29 04:38:46 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-02-29 04:38:46 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-02-29 04:39:12 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-02-29 04:39:31 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-02-29 04:39:31 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-02-29 04:39:31 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-02-29 04:39:32 ERROR (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Failed to connect to service Chromecast-6b6cdef7528c2c8cb88745574525c57b._googlecast._tcp.local., retrying in 5.0s
+2020-03-01 02:17:04 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-01 04:55:40 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-01 04:57:51 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-01 04:57:51 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-01 04:58:22 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-01 04:58:42 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-01 04:58:42 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-01 09:57:42 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/homeassistant/helpers/entity_platform.py", line 357, in _async_add_entity
+    raise HomeAssistantError(msg)
+homeassistant.exceptions.HomeAssistantError: Entity id already exists: binary_sensor.remote_ui. Platform cloud does not generate unique IDs
+2020-03-02 00:21:39 WARNING (MainThread) [homeassistant.helpers.entity] Updating state for light.bedroom_main (<class 'homeassistant.components.iglo.light.IGloLamp'>) took 0.624 seconds. Please report platform to the developers at https://goo.gl/Nvioub
+2020-03-02 02:02:12 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-02 03:13:54 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-02 03:32:10 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-02 03:32:10 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-02 03:32:36 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-02 03:32:59 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-02 03:32:59 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-02 03:32:59 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-02 21:59:45 ERROR (MainThread) [homeassistant.core] Error doing job: Fatal read error on socket transport
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 801, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+TimeoutError: [Errno 60] Operation timed out
+2020-03-03 02:22:11 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-03 03:14:51 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-03 04:26:36 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-03 04:26:36 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-03 04:26:36 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-03 04:27:02 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-03 04:27:25 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-03 04:27:25 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-03 04:27:25 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-04 03:18:34 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-04 03:33:01 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-04 04:05:48 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-04 04:05:48 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-04 04:06:19 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-04 04:06:38 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-04 04:06:38 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-04 04:06:38 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-04 09:35:57 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-04 09:36:27 ERROR (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Failed to connect to service Chromecast-c29f6d1a370af57fe2faeeebe14b7571._googlecast._tcp.local., retrying in 5.0s
+2020-03-04 19:25:41 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/homeassistant/helpers/entity_platform.py", line 357, in _async_add_entity
+    raise HomeAssistantError(msg)
+homeassistant.exceptions.HomeAssistantError: Entity id already exists: binary_sensor.remote_ui. Platform cloud does not generate unique IDs
+2020-03-05 02:07:10 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-05 02:32:31 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-05 02:32:31 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-05 02:33:02 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-05 02:33:21 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-05 02:33:21 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-05 02:33:21 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-05 04:11:24 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-06 00:29:10 ERROR (MainThread) [homeassistant.core] Error doing job: Fatal read error on socket transport
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 801, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+TimeoutError: [Errno 60] Operation timed out
+2020-03-06 02:10:34 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-06 02:23:19 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-06 03:55:03 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-06 03:55:03 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-06 03:55:34 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-06 03:55:50 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-06 03:55:50 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-06 03:55:50 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-06 21:29:58 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-06 21:29:58 ERROR (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Failed to connect to service Chromecast-c29f6d1a370af57fe2faeeebe14b7571._googlecast._tcp.local., retrying in 5.0s
+2020-03-07 00:19:36 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-07 00:19:37 ERROR (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Failed to connect to service Chromecast-c29f6d1a370af57fe2faeeebe14b7571._googlecast._tcp.local., retrying in 5.0s
+2020-03-07 03:14:47 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-07 04:27:36 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-07 04:27:36 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-07 04:28:01 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-07 04:28:25 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-07 04:28:25 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-07 04:59:29 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-07 22:20:24 ERROR (MainThread) [homeassistant.core] Error doing job: Fatal read error on socket transport
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 801, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+TimeoutError: [Errno 60] Operation timed out
+2020-03-08 02:13:19 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-08 02:26:08 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-08 03:24:29 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-08 03:24:29 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-08 03:24:29 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1-1._googlecast._tcp.local., retrying in 5.0s
+2020-03-08 03:25:00 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-08 03:25:18 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-08 03:25:18 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-08 03:25:18 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-08 15:27:23 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-08 15:27:23 ERROR (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Failed to connect to service Chromecast-c29f6d1a370af57fe2faeeebe14b7571._googlecast._tcp.local., retrying in 5.0s
+2020-03-08 22:22:24 ERROR (MainThread) [homeassistant.core] Error doing job: Fatal read error on socket transport
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 801, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+TimeoutError: [Errno 60] Operation timed out
+2020-03-09 02:07:53 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-09 02:19:58 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-09 02:19:58 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-09 02:20:23 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-09 02:20:43 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-09 02:20:43 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-09 02:20:43 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-09 02:20:44 ERROR (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Failed to connect to service Chromecast-6b6cdef7528c2c8cb88745574525c57b._googlecast._tcp.local., retrying in 5.0s
+2020-03-09 03:16:34 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-10 01:17:53 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Error communicating with socket, resetting connection
+2020-03-10 01:17:53 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-10 03:29:09 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-10 03:34:50 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-10 18:07:41 ERROR (MainThread) [homeassistant.core] Error doing job: Fatal read error on socket transport
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 801, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+TimeoutError: [Errno 60] Operation timed out
+2020-03-10 22:47:05 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-10 22:47:05 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-10 22:47:35 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-10 22:47:49 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-10 22:47:50 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-10 22:47:50 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-10 22:47:50 ERROR (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Failed to connect to service Chromecast-6b6cdef7528c2c8cb88745574525c57b._googlecast._tcp.local., retrying in 5.0s
+2020-03-11 00:02:30 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-11 00:03:21 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-11 01:47:25 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: Cannot connect to host cloud.nabucasa.com:443 ssl:None [nodename nor servname provided, or not known]
+2020-03-11 01:49:02 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: Cannot connect to host cloud.nabucasa.com:443 ssl:None [nodename nor servname provided, or not known]
+2020-03-11 01:50:41 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: Cannot connect to host cloud.nabucasa.com:443 ssl:None [nodename nor servname provided, or not known]
+2020-03-11 01:52:38 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: Cannot connect to host cloud.nabucasa.com:443 ssl:None [nodename nor servname provided, or not known]
+2020-03-11 01:54:55 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: Cannot connect to host cloud.nabucasa.com:443 ssl:None [nodename nor servname provided, or not known]
+2020-03-11 01:56:19 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/homeassistant/helpers/entity_platform.py", line 357, in _async_add_entity
+    raise HomeAssistantError(msg)
+homeassistant.exceptions.HomeAssistantError: Entity id already exists: binary_sensor.remote_ui. Platform cloud does not generate unique IDs
+2020-03-11 02:35:09 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-11 02:57:29 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-11 02:57:29 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-11 02:57:55 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-11 02:58:18 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-11 02:58:18 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-11 02:58:18 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-11 04:37:42 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-12 03:30:28 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-12 04:08:25 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-12 04:44:39 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-12 04:44:39 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-12 04:45:05 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-12 04:45:29 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-12 04:45:29 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-12 04:45:29 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-12 08:26:24 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-12 08:26:26 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-12 08:26:52 ERROR (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Failed to connect to service Chromecast-1ba35d383b16d30ed9a696a5ed2757a8._googlecast._tcp.local., retrying in 5.0s
+2020-03-12 08:26:54 ERROR (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Failed to connect to service Chromecast-c29f6d1a370af57fe2faeeebe14b7571._googlecast._tcp.local., retrying in 5.0s
+2020-03-12 14:35:09 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-12 14:35:09 ERROR (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Failed to connect to service Chromecast-c29f6d1a370af57fe2faeeebe14b7571._googlecast._tcp.local., retrying in 5.0s
+2020-03-12 19:59:19 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-12 19:59:19 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-12 19:59:22 ERROR (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Error reading from socket.
+2020-03-12 19:59:22 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Error communicating with socket, resetting connection
+2020-03-12 19:59:45 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1-1._googlecast._tcp.local., retrying in 5.0s
+2020-03-12 19:59:48 ERROR (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Failed to connect to service Chromecast-6b6cdef7528c2c8cb88745574525c57b._googlecast._tcp.local., retrying in 5.0s
+2020-03-12 20:00:28 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-12 20:00:28 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-12 20:00:58 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1-1._googlecast._tcp.local., retrying in 5.0s
+2020-03-12 20:04:56 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-12 20:04:56 ERROR (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Failed to connect to service Chromecast-1ba35d383b16d30ed9a696a5ed2757a8._googlecast._tcp.local., retrying in 5.0s
+2020-03-12 20:05:03 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-12 20:05:03 ERROR (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Failed to connect to service Chromecast-c29f6d1a370af57fe2faeeebe14b7571._googlecast._tcp.local., retrying in 5.0s
+2020-03-12 20:05:03 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Heartbeat timeout, resetting connection
+2020-03-12 20:05:03 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-12 20:05:34 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: Cannot connect to host cloud.nabucasa.com:443 ssl:None [nodename nor servname provided, or not known]
+2020-03-12 20:05:40 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: Cannot connect to host cloud.nabucasa.com:443 ssl:None [nodename nor servname provided, or not known]
+2020-03-12 20:05:51 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: Cannot connect to host cloud.nabucasa.com:443 ssl:None [nodename nor servname provided, or not known]
+2020-03-12 20:06:14 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: Cannot connect to host cloud.nabucasa.com:443 ssl:None [nodename nor servname provided, or not known]
+2020-03-12 20:06:38 ERROR (MainThread) [homeassistant.components.discovery] Network is unreachable
+2020-03-12 20:06:56 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: Cannot connect to host cloud.nabucasa.com:443 ssl:None [nodename nor servname provided, or not known]
+2020-03-12 20:08:08 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/homeassistant/helpers/entity_platform.py", line 357, in _async_add_entity
+    raise HomeAssistantError(msg)
+homeassistant.exceptions.HomeAssistantError: Entity id already exists: binary_sensor.remote_ui. Platform cloud does not generate unique IDs
+2020-03-12 20:08:18 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-12 20:08:18 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-12 20:08:18 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-13 02:03:27 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-13 02:03:27 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-13 02:03:27 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1-1._googlecast._tcp.local., retrying in 5.0s
+2020-03-13 02:03:57 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-13 02:04:16 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-13 02:04:16 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-13 02:04:16 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-13 03:46:59 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-13 04:31:06 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-13 09:06:27 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-13 09:06:27 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-14 03:32:18 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-14 04:52:01 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-14 04:59:49 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-14 04:59:49 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-14 04:59:50 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1-1._googlecast._tcp.local., retrying in 5.0s
+2020-03-14 05:00:20 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-14 05:00:38 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-14 05:00:38 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-14 05:00:38 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-14 20:53:30 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-14 20:53:30 ERROR (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Failed to connect to service Chromecast-c29f6d1a370af57fe2faeeebe14b7571._googlecast._tcp.local., retrying in 5.0s
+2020-03-15 02:49:46 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-15 03:07:20 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-15 04:21:34 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-15 04:21:34 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-15 04:22:04 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-15 04:22:19 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-15 04:22:19 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-15 04:22:19 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1-1._googlecast._tcp.local., retrying in 5.0s
+2020-03-15 04:22:19 ERROR (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Failed to connect to service Chromecast-6b6cdef7528c2c8cb88745574525c57b._googlecast._tcp.local., retrying in 5.0s
+2020-03-15 13:37:25 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-15 13:37:25 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-15 13:37:25 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Heartbeat timeout, resetting connection
+2020-03-15 13:37:25 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-16 02:35:11 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-16 03:43:04 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-16 04:11:09 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-16 04:11:09 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-16 04:11:35 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-16 04:11:54 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-16 04:11:55 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-16 04:11:55 ERROR (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Failed to connect to service Chromecast-6b6cdef7528c2c8cb88745574525c57b._googlecast._tcp.local., retrying in 5.0s
+2020-03-17 03:08:24 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-17 03:20:29 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-17 04:23:23 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-17 04:23:23 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-17 04:23:49 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-17 04:24:08 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-17 04:24:08 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-17 04:24:08 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-17 04:24:09 ERROR (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Failed to connect to service Chromecast-6b6cdef7528c2c8cb88745574525c57b._googlecast._tcp.local., retrying in 5.0s
+2020-03-17 22:10:09 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/homeassistant/helpers/entity_platform.py", line 357, in _async_add_entity
+    raise HomeAssistantError(msg)
+homeassistant.exceptions.HomeAssistantError: Entity id already exists: binary_sensor.remote_ui. Platform cloud does not generate unique IDs
+2020-03-18 03:14:44 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-18 04:10:55 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-18 04:12:38 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-18 04:12:38 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-18 04:13:09 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-18 04:13:25 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-18 04:13:25 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-18 05:27:30 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-18 05:27:30 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-18 05:27:30 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Heartbeat timeout, resetting connection
+2020-03-18 05:27:33 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-18 19:31:13 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-18 19:31:18 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-18 19:31:39 ERROR (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Failed to connect to service Chromecast-c29f6d1a370af57fe2faeeebe14b7571._googlecast._tcp.local., retrying in 5.0s
+2020-03-18 19:31:52 ERROR (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Failed to connect to service Chromecast-1ba35d383b16d30ed9a696a5ed2757a8._googlecast._tcp.local., retrying in 5.0s
+2020-03-19 02:03:05 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-19 02:42:58 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-19 04:11:13 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-19 04:11:13 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-19 04:11:39 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-19 04:11:58 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-19 04:11:58 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-19 04:11:58 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-19 04:11:59 ERROR (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Failed to connect to service Chromecast-6b6cdef7528c2c8cb88745574525c57b._googlecast._tcp.local., retrying in 5.0s
+2020-03-19 10:44:14 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-19 10:44:44 ERROR (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Failed to connect to service Chromecast-1ba35d383b16d30ed9a696a5ed2757a8._googlecast._tcp.local., retrying in 5.0s
+2020-03-19 21:48:01 ERROR (MainThread) [homeassistant.core] Error doing job: Fatal read error on socket transport
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 801, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+TimeoutError: [Errno 60] Operation timed out
+2020-03-19 21:48:01 ERROR (MainThread) [homeassistant.core] Error doing job: Fatal read error on socket transport
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 801, in _read_ready__data_received
+    data = self._sock.recv(self.max_size)
+TimeoutError: [Errno 60] Operation timed out
+2020-03-20 02:10:50 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-20 02:18:52 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-20 02:18:52 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-20 02:19:23 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-20 02:19:38 ERROR (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Failed to connect to service Chromecast-6b6cdef7528c2c8cb88745574525c57b._googlecast._tcp.local., retrying in 5.0s
+2020-03-21 02:04:54 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-21 02:04:54 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-21 02:05:20 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-21 02:05:48 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-21 02:05:48 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-21 02:05:48 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-21 02:05:50 ERROR (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Failed to connect to service Chromecast-6b6cdef7528c2c8cb88745574525c57b._googlecast._tcp.local., retrying in 5.0s
+2020-03-21 04:13:09 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-21 04:51:00 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-21 10:23:32 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-21 10:23:32 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-21 10:23:32 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Heartbeat timeout, resetting connection
+2020-03-21 10:23:32 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-21 10:23:38 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/homeassistant/helpers/entity_platform.py", line 357, in _async_add_entity
+    raise HomeAssistantError(msg)
+homeassistant.exceptions.HomeAssistantError: Entity id already exists: binary_sensor.remote_ui. Platform cloud does not generate unique IDs
+2020-03-22 02:23:00 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-22 02:23:00 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-22 02:23:00 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1-1._googlecast._tcp.local., retrying in 5.0s
+2020-03-22 02:23:30 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-22 02:23:46 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-22 02:23:46 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-22 02:23:46 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-22 02:39:29 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-22 04:28:44 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-22 13:30:42 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-22 13:31:12 ERROR (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Failed to connect to service Chromecast-1ba35d383b16d30ed9a696a5ed2757a8._googlecast._tcp.local., retrying in 5.0s
+2020-03-23 04:03:32 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-23 04:03:32 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-23 04:04:03 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-23 04:40:13 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-23 23:35:30 ERROR (MainThread) [homeassistant.core] Error doing job: Fatal write error on socket transport
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/selector_events.py", line 857, in write
+    n = self._sock.send(data)
+OSError: [Errno 64] Host is down
+2020-03-24 02:10:36 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-24 02:10:36 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-24 02:11:02 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-24 04:08:21 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-24 22:13:40 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Heartbeat timeout, resetting connection
+2020-03-24 22:13:42 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-24 22:13:42 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-25 04:17:12 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-25 15:48:19 WARNING (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Heartbeat timeout, resetting connection
+2020-03-25 15:48:49 ERROR (Thread-3) [pychromecast.socket_client] [Carrie's TV:8009] Failed to connect to service Chromecast-c29f6d1a370af57fe2faeeebe14b7571._googlecast._tcp.local., retrying in 5.0s
+2020-03-25 22:16:18 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-25 22:16:18 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-25 22:16:18 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-25 22:16:49 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-26 02:50:30 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-26 02:50:30 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-26 02:50:30 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-26 02:51:01 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-26 03:34:24 ERROR (MainThread) [homeassistant.core] Error doing job: SSL handshake failed on verifying the certificate
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/sslproto.py", line 625, in _on_handshake_complete
+    raise handshake_exc
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/sslproto.py", line 189, in feed_ssldata
+    self._sslobj.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 763, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'aa015h6buqvih86i1.api.met.no'. (_ssl.c:1056)
+2020-03-26 03:34:24 ERROR (MainThread) [homeassistant.core] Error doing job: SSL error in data received
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/sslproto.py", line 526, in data_received
+    ssldata, appdata = self._sslpipe.feed_ssldata(data)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/asyncio/sslproto.py", line 189, in feed_ssldata
+    self._sslobj.do_handshake()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/ssl.py", line 763, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'aa015h6buqvih86i1.api.met.no'. (_ssl.c:1056)
+2020-03-26 03:34:24 ERROR (MainThread) [homeassistant.components.yr.sensor] Retrying in 16 minutes: Cannot connect to host aa015h6buqvih86i1.api.met.no:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'aa015h6buqvih86i1.api.met.no'. (_ssl.c:1056)")]
+2020-03-26 14:50:47 ERROR (MainThread) [homeassistant.components.yr.sensor] Retrying in 19 minutes: Cannot connect to host aa015h6buqvih86i1.api.met.no:443 ssl:None [Connect call failed ('157.249.177.128', 443)]
+2020-03-27 03:48:52 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-27 03:48:52 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-27 03:48:52 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-27 03:49:18 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-27 03:49:42 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-27 03:49:42 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-27 03:49:42 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-27 04:02:25 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
+2020-03-27 23:55:55 ERROR (MainThread) [homeassistant.core] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/homeassistant/helpers/entity_platform.py", line 357, in _async_add_entity
+    raise HomeAssistantError(msg)
+homeassistant.exceptions.HomeAssistantError: Entity id already exists: binary_sensor.remote_ui. Platform cloud does not generate unique IDs
+2020-03-28 02:05:29 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-28 02:05:29 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-28 02:05:29 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1-1._googlecast._tcp.local., retrying in 5.0s
+2020-03-28 02:05:55 WARNING (Thread-4) [pychromecast.socket_client] [Living Room TV:8009] Heartbeat timeout, resetting connection
+2020-03-28 02:06:18 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Error reading from socket.
+2020-03-28 02:06:18 WARNING (Thread-5) [pychromecast.socket_client] [Home:42997] Error communicating with socket, resetting connection
+2020-03-28 02:06:18 ERROR (Thread-5) [pychromecast.socket_client] [Home:42997] Failed to connect to service Google-Cast-Group-109f05a31a034b048ecebd0d1c9dbef1._googlecast._tcp.local., retrying in 5.0s
+2020-03-28 03:11:18 ERROR (MainThread) [homeassistant.components.yr.sensor] Retrying in 15 minutes: 
+2020-03-28 04:26:20 WARNING (Thread-2) [pychromecast.socket_client] [Tom's TV:8009] Heartbeat timeout, resetting connection
