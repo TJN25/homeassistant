@@ -117,3 +117,509 @@ good_night_lights_off:
       - service: light.turn_off
         entity_id: light.all_lights
 
+
+good_night_long_lights_off:
+    alias: The Long Good Night!
+    sequence:
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 200
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 198
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 196
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 194
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 192
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 190
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 188
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 186
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 184
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 182
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 180
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 178
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 176
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 174
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 172
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 170
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 168
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 166
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 164
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 162
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 160
+       - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 158
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 156
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 154
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 152
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 150
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 148
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 146
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 144
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 142
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 140
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 138
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 136
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 134
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 132
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 130
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 128
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 126
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 124
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 122
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 120
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 118
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 116
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 114
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 112
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 110                                                                     
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 108
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 106
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 104
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 102
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 100
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  98
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  96
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  94
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  92
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  90
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  88
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  86
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  84
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  82
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  80
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  78
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  76
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  74
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  72
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  70
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  68
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  66
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  64
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  62
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  60
+       - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  58
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  56
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  54
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  52
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  50
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  48
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  46
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  44
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  42
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  40
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  38
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  36
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  34
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  32
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  30
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  28
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  26
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  24
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  22
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  20
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness:  18
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 16
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 14
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 12
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 10                                                                     
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 08
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 06
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 04
+      - delay: 5
+      - service: light.turn_on
+        data:
+          entity_id: light.all_lights
+          brightness: 02
+      - delay: 5
+      - service: light.turn_off
+        entity_id: light.all_lights
