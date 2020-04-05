@@ -118,7 +118,7 @@ good_night_lights_off:
         entity_id: light.all_lights
 
 
-good_night_long_lights_off:
+long_lights_off:
     alias: The Long Good Night!
     sequence:
       - service: light.turn_on
