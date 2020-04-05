@@ -214,6 +214,7 @@ long_good_night_lights_off:
 
 
 
+
 good_night_lights_off:
     alias: Good Night!
     sequence:
@@ -414,3 +415,4 @@ good_night_lights_off:
       - delay: 2
       - service: light.turn_off
         entity_id: light.all_lights
+
