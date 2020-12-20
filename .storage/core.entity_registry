@@ -126,6 +126,105 @@
                 "name": null,
                 "platform": "cast",
                 "unique_id": "c29f6d1a-370a-f57f-e2fa-eeebe14b7571"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.006086302cf43223bf8e",
+                "name": null,
+                "platform": "tuya",
+                "unique_id": "tuya.006086302cf43223bf8e"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.006086302cf43224136f",
+                "name": null,
+                "platform": "tuya",
+                "unique_id": "tuya.006086302cf43224136f"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.006086302cf43223c0b5",
+                "name": null,
+                "platform": "tuya",
+                "unique_id": "tuya.006086302cf43223c0b5"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "light.006086302cf4322483aa",
+                "name": null,
+                "platform": "tuya",
+                "unique_id": "tuya.006086302cf4322483aa"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "scene.99v0g3qe6hqrs2oz",
+                "name": null,
+                "platform": "tuya",
+                "unique_id": "tuya.99v0g3QE6hQrs2oZ"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "scene.js5nbfvhbvxfznc3",
+                "name": null,
+                "platform": "tuya",
+                "unique_id": "tuya.js5nBfvhbVxfzNc3"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "scene.zw74whxykny5srji",
+                "name": null,
+                "platform": "tuya",
+                "unique_id": "tuya.zW74whXYKNy5SRJI"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "scene.rjkjds3aamyfy1nl",
+                "name": null,
+                "platform": "tuya",
+                "unique_id": "tuya.RjKJdS3AAMyFy1nL"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "scene.8t9dllrqbcfneain",
+                "name": null,
+                "platform": "tuya",
+                "unique_id": "tuya.8T9dllRqBcfNEAin"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "scene.liddar6bw28bexmb",
+                "name": null,
+                "platform": "tuya",
+                "unique_id": "tuya.LidDar6bw28BEXMB"
+            },
+            {
+                "config_entry_id": "d8613258a67646cb8936ca0830f1c201",
+                "device_id": "b82a37be9bde426fa223b16bb98ffe98",
+                "disabled_by": null,
+                "entity_id": "media_player.kd_49x8000g",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "e71748a1-3e4d-ba55-c966-a4a261b3dfdd"
             }
         ]
     },

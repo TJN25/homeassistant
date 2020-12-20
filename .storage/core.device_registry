@@ -227,6 +227,26 @@
                 "name": "Carrie's TV",
                 "name_by_user": null,
                 "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "d8613258a67646cb8936ca0830f1c201"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "b82a37be9bde426fa223b16bb98ffe98",
+                "identifiers": [
+                    [
+                        "cast",
+                        "e71748a13e4dba55c966a4a261b3dfdd"
+                    ]
+                ],
+                "manufacturer": "Unknown manufacturer",
+                "model": "BRAVIA 4K GB ATV3",
+                "name": "TV",
+                "name_by_user": null,
+                "sw_version": null
             }
         ]
     },

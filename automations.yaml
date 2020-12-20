@@ -18,99 +18,6 @@
 
 
 
-- id: media_staring
-  alias: Media player starting
-  trigger:
-    platform: state
-    entity_id: media_player.bedroom_tv
-    to: 'playing'
-    from: 'idle'
-  condition:
-    condition: state
-    entity_id: sun.sun
-    state: 'below_horizon'
-  action:
-     - service: light.turn_on
-       data:
-         entity_id: light.turret_lights 
-         rgb_color: [255, 0, 200]
-         brightness: 200
-     - service: light.turn_on
-       data:
-         entity_id: light.main_lights
-         rgb_color: [100, 40, 0]
-         brightness: 100
-
-- id: media_playing
-  alias: Media player playing
-  trigger:
-    platform: state
-    entity_id: media_player.bedroom_tv
-    to: 'playing'
-    from: 'paused'
-  condition:
-    condition: state
-    entity_id: sun.sun
-    state: 'below_horizon'
-  action:
-     - service: light.turn_on
-       data:
-         entity_id: light.turret_lights 
-         rgb_color: [255, 0, 200]
-         brightness: 200
-     - service: light.turn_on
-       data:
-         entity_id: light.main_lights
-         rgb_color: [100, 40, 0]
-         brightness: 100
-
-
-- id: media_paused
-  alias: Media player paused 
-  trigger:
-    platform: state
-    entity_id: media_player.bedroom_tv
-    to: 'paused'
-    from: 'playing'
-  condition:
-    condition: state
-    entity_id: sun.sun
-    state: 'below_horizon'
-  action:
-     - service: light.turn_on
-       data:
-         entity_id: light.turret_lights 
-         rgb_color: [255, 0, 200]
-         brightness: 255
-     - service: light.turn_on
-       data:
-         entity_id: light.main_lights
-         rgb_color: [100, 40, 0]
-         brightness: 200
-
-
-
-- id: media_stopped
-  alias: Media player off 
-  trigger:
-    platform: state
-    entity_id: media_player.bedroom_tv
-    to: 'off'
-    from: 'playing'
-  condition:
-    condition: state
-    entity_id: sun.sun
-    state: 'below_horizon'
-  action:
-     - service: light.turn_off
-       data:
-         entity_id: light.turret_lights 
-     - service: light.turn_off
-       data:
-         entity_id: light.main_lights
-
-         
-
 - id: lights_off_while_away
   alias: Turn Ligths Off At Night
   trigger:
@@ -119,6 +26,6 @@
   action:
      - service: light.turn_off
        data:
-         entity_id: light.all_lights 
+         entity_id: light.bedroom_lights 
    
 

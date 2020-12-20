@@ -66,7 +66,7 @@ light 3:
 
 light 1:
   - platform: group
-    name: All Lights
+    name: Bedroom Lights
     entities:
       - light.turret_main
       - light.turret_strip
@@ -80,11 +80,3 @@ light 2:
       - light.bedroom_main
       - light.bedroom_lamp
 
-
-owntracks:
-  max_gps_accuracy: 100
-
-
-media_player:
-  - platform: gpmdp
-    host: 192.168.178.53
