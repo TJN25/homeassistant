@@ -1,0 +1,44 @@
+
+- cal_id: en.new_zealand#holiday@group.v.calendar.google.com
+  entities:
+  - device_id: holidays_in_new_zealand
+    ignore_availability: true
+    name: Holidays in New Zealand
+    track: true
+
+- cal_id: nicholson.tom.n@gmail.com
+  entities:
+  - device_id: nicholson_tom_n_gmail_com
+    ignore_availability: true
+    name: nicholson.tom.n@gmail.com
+    track: true
+  - device_id: yellow_bin
+    name: Yellow Bin
+    track: true
+    search: "yellow_bin"
+  - device_id: blue_bin
+    name: Blue bin
+    track: true
+    search: "blue_bin"
+
+- cal_id: bu3oa4otv80gsjiuj709a87oos@group.calendar.google.com
+  entities:
+  - device_id: study_timetable
+    ignore_availability: true
+    name: Study timetable
+    track: true
+
+- cal_id: crossfitgames.com_p99eb1mmimm0sskud6ie7aal7g@group.calendar.google.com
+  entities:
+  - device_id: crossfit_games
+    ignore_availability: true
+    name: CrossFit Games
+    track: true
+
+- cal_id: 0k6ho0gcu3hru8qngr4njdcbj0@group.calendar.google.com
+  entities:
+  - device_id: gardner_binflab
+    ignore_availability: true
+    name: gardner-binflab
+    track: true
+

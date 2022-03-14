@@ -1,0 +1,12 @@
+name: Home
+latitude: -45.8714254
+longitude: 170.5000349
+radius: 25
+icon: mdi:home
+
+
+name: Crossfit
+latitude: -45.889993
+longitude: 170.498261
+radius: 42
+icon: mdi:bike

@@ -1,0 +1,247 @@
+- id: '1610445785174'
+  alias: Living room off
+  description: ''
+  trigger:
+  - device_id: a55790d7263ce1bc5040a7ebea965da5
+    domain: hue
+    platform: device
+    type: remote_button_short_release
+    subtype: turn_off
+  condition: []
+  action:
+  - service: light.turn_off
+    data: {}
+    entity_id: light.dino_lamp
+  - service: light.turn_off
+    data: {}
+    entity_id: light.kitchen_strip
+  - type: turn_off
+    device_id: c90a5203296af7b9de8026fb7f0d1a0a
+    entity_id: switch.starburst
+    domain: switch
+  - scene: scene.m89gfmzqosdwha03
+  - service: light.turn_off
+    data: {}
+    entity_id: light.ceiling_lights
+  - scene: scene.nnwuwhk6ijopvmpq
+  mode: single
+- id: '1610445869501'
+  alias: Living room on
+  description: ''
+  trigger:
+  - device_id: a55790d7263ce1bc5040a7ebea965da5
+    domain: hue
+    platform: device
+    type: remote_button_short_release
+    subtype: turn_on
+  condition: []
+  action:
+  - service: light.turn_on
+    data: {}
+    entity_id: light.dino_lamp
+  - service: light.turn_on
+    data: {}
+    entity_id: light.kitchen_strip
+  - type: turn_on
+    device_id: c90a5203296af7b9de8026fb7f0d1a0a
+    entity_id: switch.starburst
+    domain: switch
+  - scene: scene.o69d4fwb2othxn0d
+  - service: light.turn_on
+    data: {}
+    entity_id: light.ceiling_lights
+  - scene: scene.iedzoqn8khegn0tm
+  mode: single
+- id: '1622271649792'
+  alias: Bins yellows
+  description: Change the lights for the recycling bins
+  trigger:
+  - platform: state
+    entity_id: calendar.yellow_bin
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+  - scene: scene.yellow_lights
+  mode: single
+- id: '1622272072653'
+  alias: Bins blue
+  description: Change the lights for the recycling bins
+  trigger:
+  - platform: state
+    entity_id: calendar.blue_bin
+    from: 'off'
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: automation.bins_blue
+    state: ''
+  action:
+  - scene: scene.blue_lights
+  mode: single
+- id: '1623756748781'
+  alias: Living room on widget
+  description: ''
+  trigger:
+  - device_id: a7630c658c2040cba3eaa727eec45292
+    domain: hue
+    platform: device
+    type: remote_button_long_release
+    subtype: turn_on
+  condition: []
+  action:
+  - service: light.turn_on
+    data: {}
+    entity_id: light.dino_lamp
+  - service: light.turn_on
+    data: {}
+    entity_id: light.kitchen_strip
+  - service: light.turn_on
+    data: {}
+    entity_id: light.living_room
+  - scene: scene.o69d4fwb2othxn0d
+  mode: single
+- id: '1623756991145'
+  alias: Living room off widget
+  description: ''
+  trigger:
+  - device_id: a7630c658c2040cba3eaa727eec45292
+    domain: hue
+    platform: device
+    type: remote_button_long_release
+    subtype: turn_off
+  condition: []
+  action:
+  - service: light.turn_off
+    data: {}
+    entity_id: light.dino_lamp
+  - service: light.turn_off
+    data: {}
+    entity_id: light.kitchen_strip
+  - service: light.turn_off
+    data: {}
+    entity_id: light.living_room
+  - scene: scene.m89gfmzqosdwha03
+  mode: single
+- id: '1623824255429'
+  alias: Living room dim widget
+  description: ''
+  trigger:
+  - device_id: a7630c658c2040cba3eaa727eec45292
+    domain: hue
+    platform: device
+    type: remote_button_long_release
+    subtype: dim_down
+  condition: []
+  action:
+  - service: light.turn_on
+    data: {}
+    entity_id: light.dino_lamp
+  - service: light.turn_on
+    data: {}
+    entity_id: light.kitchen_strip
+  - service: light.turn_on
+    data: {}
+    entity_id: light.living_room
+  - scene: scene.new_scene
+  - scene: scene.hzddqxurrrxea1wn
+  - scene: scene.o69d4fwb2othxn0d
+  - scene: scene.hzddqxurrrxea1wn
+  - type: turn_on
+    device_id: 69813605c5e2bd6bdece39b6d67378c6
+    entity_id: light.christmas_tree_plug
+    domain: light
+  - type: turn_on
+    device_id: c90a5203296af7b9de8026fb7f0d1a0a
+    entity_id: switch.starburst
+    domain: switch
+  mode: single
+- id: '1632555720333'
+  alias: Coming home at night
+  description: ''
+  trigger:
+  - platform: geo_location
+    zone: zone.home
+    event: enter
+    source: device_tracker.tom_s_phone
+  condition:
+  - condition: sun
+    after: sunset
+    before: sunrise
+    after_offset: '60'
+    before_offset: '60'
+  action:
+  - type: turn_on
+    device_id: 7b0f3437db688c00da946200928619af
+    entity_id: light.006086302cf43223bf8e
+    domain: light
+  mode: single
+- id: '1632647317921'
+  alias: Laptop not charging
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.itadmins_macbook_pro_internal_battery_state
+    from: Charging
+    to: Not Charging
+    for: '30'
+  condition: []
+  action:
+  - service: notify.mobile_app_tom_s_phone
+    data: {}
+  mode: single
+- id: '1632718214900'
+  alias: Normal lights
+  description: ''
+  trigger:
+  - device_id: a55790d7263ce1bc5040a7ebea965da5
+    domain: hue
+    platform: device
+    type: remote_button_long_release
+    subtype: dim_up
+  condition: []
+  action:
+  - scene: scene.o69d4fwb2othxn0d
+  - scene: scene.lnuqasmdeitb4cwc
+  - scene: scene.normal_lights
+  - service: light.turn_on
+    data: {}
+    entity_id: 'light.dino_lamp '
+  - service: light.turn_on
+    data: {}
+    entity_id: light.kitchen_strip
+  - type: turn_on
+    device_id: c90a5203296af7b9de8026fb7f0d1a0a
+    entity_id: switch.starburst
+    domain: switch
+  mode: single
+- id: '1636542330269'
+  alias: motion sensor test
+  description: ''
+  trigger:
+  - type: no_motion
+    platform: device
+    device_id: 9057fbfc68d68dd3e7a2b15f697eb7fd
+    entity_id: binary_sensor.hue_motion_sensor_1_motion
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 30
+  condition:
+  - type: is_no_motion
+    condition: device
+    device_id: 9057fbfc68d68dd3e7a2b15f697eb7fd
+    entity_id: binary_sensor.hue_motion_sensor_1_motion
+    domain: binary_sensor
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 0
+  action:
+  - type: turn_on
+    device_id: e5156d86cd1fce6cb5254c111ceef8e8
+    entity_id: light.living_room_main
+    domain: light
+    brightness_pct: 20
+  mode: single

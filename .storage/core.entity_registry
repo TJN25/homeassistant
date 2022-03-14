@@ -1,0 +1,134 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "person.thomas_nicholson",
+                "name": null,
+                "platform": "person",
+                "unique_id": "3f9fe897d7db4ebbbbbbe1b556b6a503"
+            },
+            {
+                "config_entry_id": "d8613258a67646cb8936ca0830f1c201",
+                "device_id": "76fa8d33fc8941fe8514987c3e7b1668",
+                "disabled_by": null,
+                "entity_id": "media_player.living_room_tv",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "6b6cdef7-528c-2c8c-b887-45574525c57b"
+            },
+            {
+                "config_entry_id": "d8613258a67646cb8936ca0830f1c201",
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "media_player.home",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "109f05a3-1a03-4b04-8ece-bd0d1c9dbef1"
+            },
+            {
+                "config_entry_id": "d8613258a67646cb8936ca0830f1c201",
+                "device_id": "d67303bfd88f414283dcedb75d51456d",
+                "disabled_by": null,
+                "entity_id": "media_player.bedroom_tv",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "1ba35d38-3b16-d30e-d9a6-96a5ed2757a8"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": "20ca7ecfb2e24fb0b2dcfa1663b90f8c",
+                "disabled_by": null,
+                "entity_id": "sensor.internetgatewaydevicev2_fritz_box_7490_packets_received",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA_packets_received"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": "7771025338bc45f585b882b69a94a0d5",
+                "disabled_by": null,
+                "entity_id": "sensor.internetgatewaydevicev2_fritz_box_7490_kbyte_sec_sent",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA_kbyte/sec_sent"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": "43cc9d7eda654cef9af4a6d5597f06e4",
+                "disabled_by": null,
+                "entity_id": "sensor.internetgatewaydevicev2_fritz_box_7490_bytes_sent",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA_bytes_sent"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": "f157d4da2c2b4a0a86d97a39ad105d9e",
+                "disabled_by": null,
+                "entity_id": "sensor.internetgatewaydevicev2_fritz_box_7490_kbyte_sec_received",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA_kbyte/sec_received"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": "1cbe552c7ea649b4882fc67678f07d1f",
+                "disabled_by": null,
+                "entity_id": "sensor.internetgatewaydevicev2_fritz_box_7490_packets_sent",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA_packets_sent"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": "e82813be43e04885aaad2feab2e5b05c",
+                "disabled_by": null,
+                "entity_id": "sensor.internetgatewaydevicev2_fritz_box_7490_packets_sec_received",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA_packets/sec_received"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": "6f00c6d616a345958c048e53f4334aa0",
+                "disabled_by": null,
+                "entity_id": "sensor.internetgatewaydevicev2_fritz_box_7490_packets_sec_sent",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA_packets/sec_sent"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": "213acb5051c2428093601ed9482973d8",
+                "disabled_by": null,
+                "entity_id": "sensor.internetgatewaydevicev2_fritz_box_7490_bytes_received",
+                "name": null,
+                "platform": "upnp",
+                "unique_id": "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA_bytes_received"
+            },
+            {
+                "config_entry_id": null,
+                "device_id": null,
+                "disabled_by": null,
+                "entity_id": "binary_sensor.remote_ui",
+                "name": null,
+                "platform": "cloud",
+                "unique_id": "cloud-remote-ui-connectivity"
+            },
+            {
+                "config_entry_id": "d8613258a67646cb8936ca0830f1c201",
+                "device_id": "1ae19b1b1a434bdc9b658e53db5053ea",
+                "disabled_by": null,
+                "entity_id": "media_player.bedroom_tv_2",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "c29f6d1a-370a-f57f-e2fa-eeebe14b7571"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}

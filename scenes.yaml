@@ -1,0 +1,326 @@
+- id: '1622271768259'
+  name: blue lights
+  entities:
+    light.living_room_main:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      brightness: 255
+      hs_color:
+      - 255.059
+      - 100
+      rgb_color:
+      - 64
+      - 0
+      - 255
+      xy_color:
+      - 0.158
+      - 0.05
+      effect: none
+      friendly_name: Living Room Main
+      supported_features: 63
+      state: 'on'
+    light.living_room_window:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      brightness: 255
+      hs_color:
+      - 255.059
+      - 100
+      rgb_color:
+      - 64
+      - 0
+      - 255
+      xy_color:
+      - 0.158
+      - 0.05
+      effect: none
+      friendly_name: Living Room Window
+      supported_features: 63
+      state: 'on'
+    light.living_room_lamp:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      brightness: 255
+      hs_color:
+      - 241.827
+      - 77.255
+      rgb_color:
+      - 63
+      - 57
+      - 255
+      xy_color:
+      - 0.157
+      - 0.07
+      effect: none
+      friendly_name: Living room lamp
+      supported_features: 63
+      state: 'on'
+    light.little_lamp:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      brightness: 255
+      hs_color:
+      - 241.827
+      - 77.255
+      rgb_color:
+      - 63
+      - 57
+      - 255
+      xy_color:
+      - 0.157
+      - 0.07
+      effect: none
+      friendly_name: Little lamp
+      supported_features: 63
+      state: 'on'
+- id: '1622271818570'
+  name: yellow lights
+  entities:
+    light.living_room_main:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      brightness: 255
+      hs_color:
+      - 41.429
+      - 82.353
+      rgb_color:
+      - 255
+      - 190
+      - 44
+      xy_color:
+      - 0.52
+      - 0.437
+      effect: none
+      friendly_name: Living Room Main
+      supported_features: 63
+      state: 'on'
+    light.living_room_window:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      brightness: 255
+      hs_color:
+      - 41.429
+      - 82.353
+      rgb_color:
+      - 255
+      - 190
+      - 44
+      xy_color:
+      - 0.52
+      - 0.437
+      effect: none
+      friendly_name: Living Room Window
+      supported_features: 63
+      state: 'on'
+    light.living_room_lamp:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      brightness: 255
+      hs_color:
+      - 41.429
+      - 82.353
+      rgb_color:
+      - 255
+      - 190
+      - 44
+      xy_color:
+      - 0.52
+      - 0.437
+      effect: none
+      friendly_name: Living room lamp
+      supported_features: 63
+      state: 'on'
+    light.little_lamp:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      brightness: 255
+      hs_color:
+      - 41.429
+      - 82.353
+      rgb_color:
+      - 255
+      - 190
+      - 44
+      xy_color:
+      - 0.52
+      - 0.437
+      effect: none
+      friendly_name: Little lamp
+      supported_features: 63
+      state: 'on'
+- id: '1623824355528'
+  name: Dim living room
+  entities:
+    light.living_room_main:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      brightness: 174
+      color_temp: 454
+      effect: none
+      friendly_name: Living Room Main
+      supported_features: 63
+      state: 'on'
+    light.little_lamp:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      brightness: 219
+      hs_color:
+      - 271.005
+      - 81.961
+      rgb_color:
+      - 154
+      - 45
+      - 255
+      xy_color:
+      - 0.25
+      - 0.103
+      effect: none
+      friendly_name: Little lamp
+      supported_features: 63
+      state: 'on'
+    light.living_room_window:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      brightness: 102
+      color_temp: 454
+      effect: none
+      friendly_name: Living Room Window
+      supported_features: 63
+      state: 'on'
+    light.living_room_lamp:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      brightness: 255
+      hs_color:
+      - 289.493
+      - 85.098
+      rgb_color:
+      - 216
+      - 38
+      - 255
+      xy_color:
+      - 0.333
+      - 0.137
+      effect: none
+      friendly_name: Living room lamp
+      supported_features: 63
+      state: 'on'
+    switch.starburst:
+      friendly_name: Starburst
+      state: 'on'
+    light.christmas_tree_plug:
+      friendly_name: Christmas tree plug
+      supported_features: 40
+      state: 'on'
+- id: '1632718025727'
+  name: Normal lights
+  entities:
+    light.living_room_main:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      brightness: 255
+      color_temp: 500
+      effect: none
+      friendly_name: Living Room Main
+      supported_features: 63
+      state: 'on'
+    light.little_lamp:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      brightness: 255
+      hs_color:
+      - 271.005
+      - 81.961
+      rgb_color:
+      - 154
+      - 45
+      - 255
+      xy_color:
+      - 0.25
+      - 0.103
+      effect: none
+      friendly_name: Little lamp
+      supported_features: 63
+      state: 'on'
+    light.living_room_lamp:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      brightness: 255
+      hs_color:
+      - 299.431
+      - 82.745
+      rgb_color:
+      - 252
+      - 44
+      - 255
+      xy_color:
+      - 0.38
+      - 0.159
+      effect: none
+      friendly_name: Living room lamp
+      supported_features: 63
+      state: 'on'
+    light.living_room_window:
+      min_mireds: 153
+      max_mireds: 500
+      effect_list:
+      - colorloop
+      - random
+      brightness: 255
+      color_temp: 500
+      effect: none
+      friendly_name: Living Room Window
+      supported_features: 63
+      state: 'on'
+    light.christmas_tree_plug:
+      friendly_name: Christmas tree plug
+      supported_features: 40
+      state: 'on'
+    switch.starburst:
+      friendly_name: Starburst
+      state: 'on'

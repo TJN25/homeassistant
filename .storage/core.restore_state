@@ -1,0 +1,163 @@
+{
+    "data": [
+        {
+            "last_seen": "2020-03-28T05:24:47.002759+00:00",
+            "state": {
+                "attributes": {
+                    "editable": true,
+                    "friendly_name": "Thomas Nicholson",
+                    "id": "3f9fe897d7db4ebbbbbbe1b556b6a503",
+                    "user_id": "b915d4806e46497a94369f0cc6705d8e"
+                },
+                "context": {
+                    "id": "30be90e58b444901a45a32d05b19f0f5",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "person.thomas_nicholson",
+                "last_changed": "2020-02-27T09:09:28.640483+00:00",
+                "last_updated": "2020-02-27T09:09:30.050226+00:00",
+                "state": "unknown"
+            }
+        },
+        {
+            "last_seen": "2020-03-28T05:24:47.002759+00:00",
+            "state": {
+                "attributes": {
+                    "battery": 22,
+                    "entity_picture": "/local/tom_pic.jpg",
+                    "friendly_name": "Tom",
+                    "gps_accuracy": 17,
+                    "latitude": -45.8713592,
+                    "longitude": 170.4999631,
+                    "source_type": "gps"
+                },
+                "context": {
+                    "id": "7f134af3a7c7437c806268fd9adb8ded",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "device_tracker.thomasnicholson25_s10",
+                "last_changed": "2020-02-27T09:09:28.640724+00:00",
+                "last_updated": "2020-02-27T09:09:28.640724+00:00",
+                "state": "home"
+            }
+        },
+        {
+            "last_seen": "2020-03-28T05:24:47.002759+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Media player off",
+                    "id": "media_stopped",
+                    "last_triggered": "2019-12-29T09:04:30.337582+00:00"
+                },
+                "context": {
+                    "id": "2215ac693d71449a994d9e93dd9280cd",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.media_player_off",
+                "last_changed": "2020-02-27T09:09:28.640942+00:00",
+                "last_updated": "2020-02-27T09:09:28.640942+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-03-28T05:24:47.002759+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Sunset Lights",
+                    "id": "sunset_lights",
+                    "last_triggered": "2020-03-27T06:22:02.540149+00:00"
+                },
+                "context": {
+                    "id": "7019b46a8d17474bb8bc4402f50a7fc3",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.sunset_lights",
+                "last_changed": "2020-02-27T09:09:30.052921+00:00",
+                "last_updated": "2020-03-27T06:22:02.540426+00:00",
+                "state": "on"
+            }
+        },
+        {
+            "last_seen": "2020-03-28T05:24:47.002759+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Media player starting",
+                    "id": "media_staring",
+                    "last_triggered": "2019-12-28T10:19:49.672742+00:00"
+                },
+                "context": {
+                    "id": "e20f62543fa94fd38ff32341bdaea9d9",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.media_player_starting",
+                "last_changed": "2020-02-27T09:09:28.641487+00:00",
+                "last_updated": "2020-02-27T09:09:28.641487+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-03-28T05:24:47.002759+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Turn Ligths Off At Night",
+                    "id": "lights_off_while_away",
+                    "last_triggered": "2020-03-19T09:30:03.459543+00:00"
+                },
+                "context": {
+                    "id": "199d7f1ac6f84af7b3f651b1ba351b06",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.turn_ligths_off_at_night",
+                "last_changed": "2020-03-20T07:03:17.727224+00:00",
+                "last_updated": "2020-03-20T07:03:17.727224+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-03-28T05:24:47.002759+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Media player playing",
+                    "id": "media_playing",
+                    "last_triggered": "2019-09-28T08:33:25.196974+00:00"
+                },
+                "context": {
+                    "id": "d005cbd020724f4a813c9062984f33da",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.media_player_playing",
+                "last_changed": "2020-02-27T09:09:28.641886+00:00",
+                "last_updated": "2020-02-27T09:09:28.641886+00:00",
+                "state": "off"
+            }
+        },
+        {
+            "last_seen": "2020-03-28T05:24:47.002759+00:00",
+            "state": {
+                "attributes": {
+                    "friendly_name": "Media player paused",
+                    "id": "media_paused",
+                    "last_triggered": "2019-09-29T12:11:12.503406+00:00"
+                },
+                "context": {
+                    "id": "dc6273abf7ed47c58a2e57acdc94a4b3",
+                    "parent_id": null,
+                    "user_id": null
+                },
+                "entity_id": "automation.media_player_paused",
+                "last_changed": "2020-02-27T09:09:28.642092+00:00",
+                "last_updated": "2020-02-27T09:09:28.642092+00:00",
+                "state": "off"
+            }
+        }
+    ],
+    "key": "core.restore_state",
+    "version": 1
+}

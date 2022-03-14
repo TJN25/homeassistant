@@ -1,0 +1,175 @@
+
+# Configure a default setup of Home Assistant (frontend, api, etc)
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+
+light 30:
+  - platform: iglo
+    host: 192.168.0.163
+    name: kitchen_strip
+
+
+light 31:
+  - platform: iglo
+    host: 192.168.0.164
+    name: dino_lamp
+
+
+light 32:
+  - platform: iglo
+    host: 192.168.0.115
+    name: study_main
+
+light 33:
+  - platform: iglo
+    host: 192.168.0.186
+    name: washing_machine
+
+google:
+   client_id: 624135434429-j4gnbu7mig56d25u9et9pi7m8hta5cl4.apps.googleusercontent.com
+   client_secret: !secret google_key
+
+
+
+  
+# Example configuration.yaml entry
+frontend:
+  themes: !include themes.yaml
+# Example configuration.yaml entry
+
+light 201:
+  - platform: switch
+    name: starwall_light
+    entity_id: switch.fan_plug
+
+light 202:
+  - platform: switch
+    name: starburst_light
+    entity_id: switch.starburst
+
+light 203:
+  - platform: switch
+    name: hello_sign_light
+    entity_id: switch.hello_sign
+
+light 204:
+  - platform: switch
+    name: tom_lamp
+    entity_id: switch.tom_office
+
+light 101:
+  - platform: group
+    name: ambient_lights_living_room
+    entities:
+      - light.little_lamp
+      - light.dino_lamp
+      - light.kitchen_strip
+      - light.starburst_light
+
+light 102:
+  - platform: group
+    name: ceiling_lights
+    entities:
+      - light.window
+      - light.living_room_ceiling
+
+light 103:
+  - platform: group
+    name: kitchen_lights
+    entities:
+      - light.living_room_lamp
+      - light.little_lamp
+      - light.kitchen_strip
+      - light.starburst_light
+
+light 104:
+  - platform: group
+    name: main_lights_living_room
+    entities:
+      - light.living_room_ceiling
+      - light.window
+      - light.living_room_lamp
+
+light 105:
+  - platform: group
+    name: hallway_group
+    entities:
+      - light.006086302cf4322483aa
+      - light.006086302cf43223bf8e
+      - light.lantern
+      - light.hello_sign_light
+
+light 106:
+  - platform: group
+    name: study_group
+    entities:
+      - light.study_overhead
+      - light.starwall_light
+      - light.standing_lamp
+
+
+light 107:
+  - platform: group
+    name: main_lights_living_all
+    entities:
+      - light.living_room_ceiling
+      - light.window
+      - light.living_room_lamp
+      - light.little_lamp
+      - light.kitchen_strip
+      - light.starburst_light
+      - light.dino_lamp
+
+light 108:
+  - platform: group
+    name: turret_lights_all
+    entities:
+      - light.turret_main
+      - light.turret_strip
+
+light 109:
+  - platform: group
+    name: bedroom_main_lights
+    entities:
+      - light.bedroom_lamp
+      - light.bedroom_main
+
+light 110:
+  - platform: group
+    name: bedroom_ceiling
+    entities:
+      - light.bedroom_main
+      - light.turret_main
+
+light 111:
+  - platform: group
+    name: bedroom_ambient
+    entities:
+      - light.bedroom_lamp
+      - light.turret_strip
+
+light 112:
+  - platform: group
+    name: bathroom_group
+    entities:
+      - light.living_room_main
+      - light.living_room_window
+      - light.006086302cf43224136f
+      - light.washing_machine
+
+light 113:
+  - platform: group
+    name: office_group
+    entities:
+      - light.tom_lamp
+      - light.christmas_tree_plug
+      - light.006086302cf43223c0b5

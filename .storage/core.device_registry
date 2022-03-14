@@ -1,0 +1,235 @@
+{
+    "data": {
+        "devices": [
+            {
+                "area_id": "e1f240920395460f8835218ad6650fe9",
+                "config_entries": [
+                    "d8613258a67646cb8936ca0830f1c201"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "76fa8d33fc8941fe8514987c3e7b1668",
+                "identifiers": [
+                    [
+                        "cast",
+                        "6b6cdef7528c2c8cb88745574525c57b"
+                    ]
+                ],
+                "manufacturer": "Unknown manufacturer",
+                "model": "Chromecast",
+                "name": "Living Room TV",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": "6940ab23c1344a2eb586bc020eebc58e",
+                "config_entries": [
+                    "d8613258a67646cb8936ca0830f1c201"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "d67303bfd88f414283dcedb75d51456d",
+                "identifiers": [
+                    [
+                        "cast",
+                        "1ba35d383b16d30ed9a696a5ed2757a8"
+                    ]
+                ],
+                "manufacturer": "Unknown manufacturer",
+                "model": "Chromecast",
+                "name": "Tom's TV",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [],
+                "connections": [
+                    [
+                        "upnp",
+                        "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA"
+                    ]
+                ],
+                "hub_device_id": null,
+                "id": "785141bb73334932b177bac20762a1cb",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA"
+                    ]
+                ],
+                "manufacturer": "AVM Berlin",
+                "model": null,
+                "name": "InternetGatewayDeviceV2 - FRITZ!Box 7490",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "20ca7ecfb2e24fb0b2dcfa1663b90f8c",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA_packets_received"
+                    ]
+                ],
+                "manufacturer": "AVM Berlin",
+                "model": null,
+                "name": "InternetGatewayDeviceV2 - FRITZ!Box 7490 packets received",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "7771025338bc45f585b882b69a94a0d5",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA_kbyte/sec_sent"
+                    ]
+                ],
+                "manufacturer": "AVM Berlin",
+                "model": null,
+                "name": "InternetGatewayDeviceV2 - FRITZ!Box 7490 kbyte/sec sent",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "43cc9d7eda654cef9af4a6d5597f06e4",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA_bytes_sent"
+                    ]
+                ],
+                "manufacturer": "AVM Berlin",
+                "model": null,
+                "name": "InternetGatewayDeviceV2 - FRITZ!Box 7490 bytes sent",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "f157d4da2c2b4a0a86d97a39ad105d9e",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA_kbyte/sec_received"
+                    ]
+                ],
+                "manufacturer": "AVM Berlin",
+                "model": null,
+                "name": "InternetGatewayDeviceV2 - FRITZ!Box 7490 kbyte/sec received",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "1cbe552c7ea649b4882fc67678f07d1f",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA_packets_sent"
+                    ]
+                ],
+                "manufacturer": "AVM Berlin",
+                "model": null,
+                "name": "InternetGatewayDeviceV2 - FRITZ!Box 7490 packets sent",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "e82813be43e04885aaad2feab2e5b05c",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA_packets/sec_received"
+                    ]
+                ],
+                "manufacturer": "AVM Berlin",
+                "model": null,
+                "name": "InternetGatewayDeviceV2 - FRITZ!Box 7490 packets/sec received",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "6f00c6d616a345958c048e53f4334aa0",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA_packets/sec_sent"
+                    ]
+                ],
+                "manufacturer": "AVM Berlin",
+                "model": null,
+                "name": "InternetGatewayDeviceV2 - FRITZ!Box 7490 packets/sec sent",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "213acb5051c2428093601ed9482973d8",
+                "identifiers": [
+                    [
+                        "upnp",
+                        "uuid:75802409-bccb-40e7-9f6c-E0286DB7B8BA_bytes_received"
+                    ]
+                ],
+                "manufacturer": "AVM Berlin",
+                "model": null,
+                "name": "InternetGatewayDeviceV2 - FRITZ!Box 7490 bytes received",
+                "name_by_user": null,
+                "sw_version": null
+            },
+            {
+                "area_id": null,
+                "config_entries": [
+                    "d8613258a67646cb8936ca0830f1c201"
+                ],
+                "connections": [],
+                "hub_device_id": null,
+                "id": "1ae19b1b1a434bdc9b658e53db5053ea",
+                "identifiers": [
+                    [
+                        "cast",
+                        "c29f6d1a370af57fe2faeeebe14b7571"
+                    ]
+                ],
+                "manufacturer": "Google Inc.",
+                "model": "Chromecast",
+                "name": "Carrie's TV",
+                "name_by_user": null,
+                "sw_version": null
+            }
+        ]
+    },
+    "key": "core.device_registry",
+    "version": 1
+}
